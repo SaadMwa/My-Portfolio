@@ -7,34 +7,42 @@
   <link rel="stylesheet" href="contact us .css" />
 </head>
 <body>
-
-<section class="contact-us-section">
-  <img class="contact-image" src="image.jpg" alt="Contact Illustration" />
-
-  <div class="contact-info">
-    <div class="contact-header">
-      <h2>Contact Us</h2>
+<section class="contact-us-section" id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-image-container">
+      <img class="contact-image" src="image.jpg" alt="Contact Illustration" />
     </div>
 
-    <div class="contact-details">
-      <div class="visit-block">
-        <h3>Visit Us</h3>
-        <p>Location: Mardan, Pakistan</p>
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <h3>Location</h3>
+          <p>Mardan, Pakistan</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:saadkhanxyz@gmail.com">saadkhanxyz@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p><a href="tel:+923001234567">+92 300 1234567</a></p>
+        </div>
       </div>
 
-      <div class="contact-block">
-        <h3>Contact</h3>
-        <p><a href="mailto:contact@company.com">saadkhanxyz@gmail.com</a></p>
-        <p><a href="tel:+14065550120">+92 12345667</a></p>
-      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
-
-    <form class="subscribe-form">
-      <input type="email" name="email" placeholder="Email" required />
-      <button type="submit">Submit</button>
-    </form>
   </div>
 </section>
+
 
 </body>
 </html>

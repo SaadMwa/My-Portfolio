@@ -1,122 +1,135 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
- body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-background-image: url(https://wallpapers.com/images/hd/black-lion-1900-x-1200-wallpaper-nrhqqzyl6fylzvz6.jpg);
-background-size: cover;
- }
-.wrapper {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  width: 420px;
-  color: white;
-  padding: 10px;
-  border-radius: 20px;
+/* Body */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  overflow: hidden;
 }
- .wrapper h1{
-    text-align:center;
-    position: relative;
-    top: 20px;
-    width: 100%;
- }
- .wrapper .user{
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
- }
-  .user input{
-    width:100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255,.2);
-    border-radius:40px;
-    font-size: 15px;
-    color: white;
-    padding: 20px 45px 20px 20px;
-  } 
-  .user ::placeholder{
-    color: white;
-  }
-  .wrapper .remember{
-    display: flex;
-    justify-content: space-between;
-    margin: -15px 0px 15px;
 
-  }
-  
-   .remember label input{
-    accent-color:orange;
-    margin-right: 3px;
-   }
-   .remember a {
-              color:white;
-              text-decoration: none;
-              margin-right: 3px;
-   }
-   .wrapper .button input{
-       width: 20%;
-    position: relative;
-    left: 41%;
-    height: 42px;
-    border: 2px solid transparent;
-    border-radius: 40px;
-   font-family: serif;
-    font-weight: bolder;
+/* Wrapper */
+.login-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  width: 400px;
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(255, 106, 0, 0.4), 0 0 80px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s;
+}
+.login-wrapper:hover {
+  transform: scale(1.02);
+}
 
-   }
-   .wrapper .new p{
-      display: flex;
-      justify-content: space-between;
-   }
-   .new p a{
-       color: white;
-       text-decoration:none;
-       margin-right: 5px;
-   }
-   .remember a:hover{
-       text-decoration: underline;
-       cursor: pointer;
-       color:orange;
-       transition: 0.9ms;
+/* Heading */
+.login-wrapper h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ff6a00;
+  text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00;
+}
 
-   }
-   .new p a:hover{
-      text-decoration: underline;
-       cursor: pointer;
-       color:orange;
-   }
-.wrapper .button input:hover {
-  background-color: orange;
-  color: black;
-  font-weight: bolder;
-  font-family: serif;
-  transition: all 1s linear;
-  transform: scale(1.3);
+/* Input Fields */
+.user {
+  position: relative;
+  margin-bottom: 30px;
+}
+.user input {
+  width: 100%;
+  padding: 15px 45px 15px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+.user input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 15px #ff6a00, 0 0 30px #00f0ff;
+}
+.user i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+/* Remember / Forgot */
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.remember label input {
+  accent-color: #ff6a00;
+  margin-right: 5px;
+}
+.remember a {
+  color: #00f0ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.remember a:hover {
+  color: #ff6a00;
+  text-decoration: underline;
+}
+
+/* Login Button */
+.button input {
+  width: 50%;
+  padding: 12px;
+  border: 2px solid #ff6a00;
+  border-radius: 40px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #ff6a00, 0 0 20px #00f0ff;
 }
-.user i{
-      display: flex;
-      justify-content: flex-end;
-      align-items: end;
-      align-content: end;
-      position: relative;
-      bottom: 70%;
-      right: 10px;
-      font-size:20px;
-      pointer-events: none;
+.button input:hover {
+  background: #ff6a00;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff6a00, 0 0 40px #00f0ff;
 }
-.user input:focus + i {
-  color: orange;
+
+/* New Account Link */
+.new p {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.new p a {
+  color: #00f0ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.new p a:hover {
+  color: #ff6a00;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-wrapper {
+    width: 90%;
+    padding: 40px 20px;
+  }
 }

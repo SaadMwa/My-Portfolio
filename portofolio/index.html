@@ -3,69 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Portfolio</title>
+  <title>Saad's Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=UoqMunThenKhung&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Portofolio.css" />
 </head>
 <body>
-  <div class="nav">
+
+ 
+  <nav class="nav fade-in">
     <ul>
-      <li><a href="/html-css-js-projects/portofolio/index.html">Home</a></li>
-      <li><a href="#">Experience</a></li>
-      <li><a href="/html-css-js-projects/projects/index.html">Projects</a></li>
-      <li><a href="/html-css-js-projects/contact-us/index.html">Contact us</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="/html-css-js-projects/contact-us/index.html">Contact</a></li>
     </ul>
     <div class="login">
-      <a href="/html-css-js-projects/login/index.html" target="_blank">
-        <button>Login</button>
-      </a>
+      <a href="/html-css-js-projects/login/index.html"><button>Login</button></a>
       <button>Register</button>
     </div>
-  </div>
+  </nav>
 
-  <div class="parentdiv">
-    <div class="box1">
-      <h2 class="hi">Introduction</h2>
-      <h2>Hi, I'm Saad.</h2>
+<section class="hero" id="home">
+ 
+  <div class="intro-wrapper fade-in">
+ 
+    <div class="intro-box">
+      <h2 id="typewriter"><span class="name">Hi, I'm Saad.</span></h2>
       <p>
-        I'm a passionate front-end web developer with a strong interest in creating clean, responsive, and user-friendly websites. I enjoy bringing designs to life using HTML, CSS, and JavaScript, and I'm constantly learning to expand my skills and improve my craft.
-        <br><br>
-        Whether it's a landing page, a portfolio, or an interactive web app, I love turning ideas into real, functional websites. My goal is to build not just websites, but smooth and engaging digital experiences.
+        I'm a passionate front-end developer creating clean, responsive, and user-friendly websites.
       </p>
-    </div>
-
-    <div class="profile">
-      <img src="image.jpg" alt="profile" />
-    </div>
-
-    <div class="box2">
-      <h2 class="sk">skills</h2>
-      <p>
-        I have a strong foundation in front-end web development with hands-on experience using HTML, CSS, and JavaScript. I'm skilled at building responsive layouts, implementing modern design trends, and making websites that look great on all devices.
-        <br><br>
-        My CSS skills include animations, transitions, flexbox, and grid systems. I enjoy working with clean, maintainable code and constantly learning to improve my UI/UX design understanding.
-        <br><br>
-        I'm currently exploring JavaScript in greater depth and gradually diving into frameworks like React to enhance the interactivity and functionality of my projects.
-      </p>
+      <a href="#contact" class="btn-hire">Hire Me</a>
     </div>
   </div>
 
-  <div class="hire">
-    <h2>Hire Me!</h2>
+ 
+  <div class="profile slide-right">
+    <img src="image.jpg" alt="Saad Profile">
   </div>
+</section>
 
-  <div class="see">
-    <h2 class="pr">
-        Projects
-    </h2>
-  </div>
 
-  <footer class="footer">
+ 
+  <section class="skills" id="experience">
+    <h2 class="fade-in">My Skills</h2>
+    <div class="skills-box">
+      <div class="skill slide-left">
+        <h3>HTML & CSS</h3>
+        <p>Clean, responsive layouts and modern designs.</p>
+      </div>
+      <div class="skill slide-left">
+        <h3>JavaScript</h3>
+        <p>Interactive features and smooth user experiences.</p>
+      </div>
+      <div class="skill slide-left">
+        <h3>React (Learning)</h3>
+        <p>Building modern, reactive web applications.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="projects" id="projects">
+    <h2 class="fade-in">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card slide-right">
+        <h3>Portfolio Website</h3>
+        <p>Responsive, modern portfolio with dark theme.</p>
+        <a href="#" class="btn-project">View</a>
+      </div>
+      <div class="project-card slide-right">
+        <h3>Landing Page</h3>
+        <p>Interactive landing page with animations.</p>
+        <a href="#" class="btn-project">View</a>
+      </div>
+      <div class="project-card slide-right">
+        <h3>More Projects</h3>
+        <p>Click on View More to see More projects</p>
+        <a href="/html-css-js-projects/projects/index.html" class="btn-project">See More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer fade-in" id="contact">
     <h2>Contact Me</h2>
-    <p>&copy; 2025 Saad. All rights reserved.</p>
     <p><i class="fa fa-envelope"></i> saadkhanxyz@gmail.com</p>
     <p><i class="fa fa-phone"></i> +92 300 12345678</p>
     <p>Available: Mon – Fri, 10AM – 6PM (PKT)</p>
@@ -76,5 +98,6 @@
     <p>Location: Mardan, Pakistan</p>
     <p>"Building clean and powerful web experiences."</p>
   </footer>
+<script src="portofolio.js"></script>
 </body>
 </html>
