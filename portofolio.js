@@ -65,6 +65,15 @@ const PROJECTS = [
     liveUrl: 'https://saadmwa.github.io/To-do-app/',
     codeUrl: 'https://github.com/SaadMwa/To-do-app.git',
   },
+
+    {
+    title: 'Mood Journal',
+    tech: 'React.js • Tailwind',
+    description: '',
+    image: 'https://i.postimg.cc/brPnyhmH/moddy-journal.png',
+    liveUrl: 'https://saadmwa.github.io/Moody_Journal/',
+    codeUrl: 'https://github.com/SaadMwa/Moody_Journal.git',
+  },
 ];
 
 function throttle(func, delay) {
