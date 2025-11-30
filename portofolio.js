@@ -74,6 +74,15 @@ const PROJECTS = [
     liveUrl: 'https://saadmwa.github.io/Moody_Journal/',
     codeUrl: 'https://github.com/SaadMwa/Moody_Journal.git',
   },
+
+      {
+    title: 'Currency-Converter',
+    tech: 'React.js • Tailwind',
+    description: '',
+    image: 'https://i.postimg.cc/4nCLprjD/CUrrency-COverter.png',
+    liveUrl: 'https://currency-converter-six-black.vercel.app/',
+    codeUrl: 'https://github.com/SaadMwa/currency-converter.git',
+  },
 ];
 
 function throttle(func, delay) {
