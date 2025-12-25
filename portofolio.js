@@ -60,7 +60,7 @@ const PROJECTS = [
   {
     title: 'To-do-List',
     tech: 'React.js • CSS',
-    description: '',
+    description: 'A simple yet effective to-do list application built with React.js and styled using CSS. Features include task creation, completion tracking, and local storage persistence.',
     image: 'https://i.postimg.cc/QNnw9S6X/Capture4.png',
     liveUrl: 'https://saadmwa.github.io/To-do-app/',
     codeUrl: 'https://github.com/SaadMwa/To-do-app.git',
@@ -69,7 +69,7 @@ const PROJECTS = [
     {
     title: 'Mood Journal',
     tech: 'React.js • Tailwind',
-    description: '',
+    description: 'A personal mood journal application built with React.js and styled using Tailwind CSS. Features include mood tracking, journal entries, and a beautiful UI for expressing emotions.',
     image: 'https://i.postimg.cc/brPnyhmH/moddy-journal.png',
     liveUrl: 'https://saadmwa.github.io/Moody_Journal/',
     codeUrl: 'https://github.com/SaadMwa/Moody_Journal.git',
@@ -78,10 +78,29 @@ const PROJECTS = [
       {
     title: 'Currency-Converter',
     tech: 'React.js • Tailwind',
-    description: '',
+    description: 'Convert currencies seamlessly with this Currency Converter app. Built with React.js and styled using Tailwind CSS, it provides real-time exchange rates and a user-friendly interface for effortless currency conversion.',
     image: 'https://i.postimg.cc/4nCLprjD/CUrrency-COverter.png',
     liveUrl: 'https://currency-converter-six-black.vercel.app/',
     codeUrl: 'https://github.com/SaadMwa/currency-converter.git',
+  },
+
+
+        {
+    title: 'Habit-Tracker',
+    tech: 'React.js • Tailwind',
+    description: 'Track and manage your habits effectively with this Habit Tracker app. Built with React.js and styled using Tailwind CSS, it offers a user-friendly interface to help you stay on top of your goals.',
+    image: 'https://i.postimg.cc/nLZD9M08/Habti-Tracker.png',
+    liveUrl: 'https://habittracker-jade.vercel.app/',
+    codeUrl: 'https://github.com/SaadMwa/Habit-Tracker.git',
+  },
+
+         {
+    title: 'SyncNotes',
+    tech: 'React.js • Tailwind • TypeScript • IndexedDB',
+    description: 'A note-taking application that syncs your notes across devices using IndexedDB for offline storage. Built with React.js, Tailwind CSS, and TypeScript, it provides a seamless experience for managing your notes anytime, anywhere.',
+    image: 'https://i.ibb.co/Rk4x0f3k/syncnotes.png',
+    liveUrl: 'https://syncnotes-omega.vercel.app/',
+    codeUrl: 'https://github.com/SaadMwa/syncnotes..git',
   },
 ];
 
